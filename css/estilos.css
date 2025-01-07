@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main */
+main {
+    background-color: #fbfafa;
+    max-width: 900px; 
+    margin: 20px auto;
+    padding: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  
+}
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* Header */
+header {
+    background-image: linear-gradient(to bottom,#51266d,#c9a3e1);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: block;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    margin: 0 auto;
+}
+
+
+.container h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.container img {
+    height: auto;
+    width: 150px;
+}
+/* Estilos para el contenedor del select */
+.selector-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: auto; 
+}
+
+/* Estilos para el select */
+#peliculas {
+    padding: 15px; 
+    font-size: 16px; 
+    border-radius: 10px; 
+    border: 2px solid #51266d; /* Borde morado */
+    background-color: #f0f0f0; /* Fondo gris claro */
+    color: #51266d; /* Color de texto */
+    outline: none; 
+    cursor: pointer; 
+    width: 240px; 
+    height: auto;
+    transition: border-color 0.3s ease; 
+}
+
+
+
+#peliculas option {
+    background-color: #fff;
+    color:#51266d;
+    padding: 10px;
+}
+
+
+#peliculas:hover {
+    background-color: #51266d;
+    color:white;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    background-color: #c9a3e1;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li a:hover {
+    background-color: #51266d;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.selector {
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.selector button {
+    background-color: white;
+    color: #9dc3eb;
+    border: 2px solid #9dc3eb;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.selector button:hover {
+    background-color: #9dc3eb;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+#Historia,
+#Hayao,
+#Takahata,
+#Pelicula {
+    display: none;
+    width: 100%;
+}
+
+#Historia:target,
+#Hayao:target,
+#Takahata:target,
+#Pelicula:target{
+    display: block;
+}
+
+#tituloPelicula {
+    text-align: center;  /* Centra el texto horizontalmente */
+    margin: 20px 0;     /* Añade espacio superior e inferior */
+}
+#tituloSinopsis{
+    text-align: center;  /* Centra el texto horizontalmente */
+    margin: 20px 0;     /* Añade espacio superior e inferior */
+}
+
+#tituloReparto{
+    text-align: center;  /* Centra el texto horizontalmente */
+    margin: 20px 0;     /* Añade espacio superior e inferior */
+}
+
+/* Responsive */
+@media (min-width: 320px) and (max-width: 768px) {
+    nav ul {
+        display: block;
+        list-style-type: none;
+        padding: 0;
+        margin: 100px 0 0 0;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+        padding: 10px;
+        color: #fff;
+    }
+}
