@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studios Ghibli Fansite</title>
+    <link rel="icon" href="imagenes/favicon.png">
+    <link rel="stylesheet" href="css/estilos.css" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container" style="width:100%">
+            <h1>Studios Ghibli Fansite</h1>
+        </div>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#Historia" class="active">Studios Ghibli</a></li>
+                <li><a href="#Hayao" class="active">Hayao Miyazaki</a></li>
+                <li><a href="#Takahata" class="active">Isao Takahata</a></li>
+            </ul>
+
+            <div id="uno" class="container">
+                <img class="container" src="imagenes/studio2.jpg" alt="Studio Ghibli">
+            </div><br>
+            <ul>
+                <li><a href="#Pelicula" class="active">Elige una película</a></li>
+            </ul>
+            <!--Seleccion Pelicula-->
+            <div id="dos"></div>
+        </nav>
+
+        <!-- Selección Película -->
+        <div class="content" id="Pelicula">
+            <div class="selector-container">
+                <select name="peliculas" id="peliculas" onchange="mostrarBotones()" size="5" style="width: 50%; padding: 5px; font-size: 14px;"<a></a>>
+                    <option value="Nausicaä del Valle del Viento">Nausicaä del Valle del Viento</option>
+                    <option value="El castillo en el cielo">El castillo en el cielo</option>
+                    <option value="La tumba de las luciernagas">La tumba de las luciernagas</option>
+                    <option value="Mi vecino Totoro">Mi vecino Totoro</option>
+                    <option value="Nicky, la aprendiz de bruja">Nicky, la aprendiz de bruja</option>
+                    <option value="Recuerdos del ayer">Recuerdos del ayer</option>
+                    <option value="Porco Rosso">Porco Rosso</option>
+                    <option value="Pompoko">Pompoko</option>
+                    <option value="La princesa Mononoke">La princesa Mononoke</option>
+                    <option value="Mis vecinos los Yamada">Mis vecinos los Yamada</option>
+                    <option value="El viaje de Chihiro">El viaje de Chihiro</option>
+                    <option value="Castillo Ambulante">Castillo Ambulante</option>
+                    <option value="Ponyo en el acantilado">Ponyo en el acantilado</option>
+                    <option value="El viento se levanta">El viento se levanta</option>
+                    <option value="El cuento de la princesa Kaguya">El cuento de la princesa Kaguya</option>
+                    <option value="El chico y la garza">El chico y la garza</option>
+                </select>
+            </div>
+			<h1 id="Descripcion"></h1>
+            <h2 id="tituloPelicula" style="display: none; color: #51266d;"></h2>
+            <h3 id="tituloSinopsis" style="display: none; color: #51266d;">Sinopsis</h3>
+            <div id="sinopsis" style="text-align: center; margin: 20px 0; color: black;"></div>
+            <h3 id="tituloReparto" style="display: none; color: #51266d;">Reparto</h3>
+            <div id="reparto" style="text-align: center; margin: 20px 0; color: black;"></div>
+            <img id="imagenPelicula" src="" alt="" style="display: none; max-width: 300px; margin: 20px auto;">
+        </div>
+
+        <div class="content" id="Historia">
+            <h2 style="color:#51266d">Studios Ghibli</h2>
+            <img class="container" src="imagenes/edificio.jpg" alt="Studio Ghibli">
+            <p align="left">Studio Ghibli (スタジオジブリ) es un estudio japonés de animación, considerado por la crítica especializada y muchos cinéfilos como uno de los mejores estudios de animación del mundo en la actualidad. El estudio es conocido por sus largometrajes animados y también ha producido varios cortometrajes, comerciales de televisión y una película para televisión. Fue fundado el 15 de junio de 1985 por los directores Hayao Miyazaki e Isao Takahata y el productor Toshio Suzuki.</p>
+        </div>
+        
+        <div id="Hayao" class="content">
+            <h2 style="color:#51266d">Hayao Miyazaki</h2>
+            <img class="container" src="imagenes/Hayao.jpg" alt="Hayao Miyazaki">
+            <p>Hayao Miyazaki, nacido el 5 de enero de 1941 en Tokio, Japón, es un reconocido director de cine y animación...</p>
+        </div>
+
+        <div id="Takahata" class="content">
+            <h2 style="color:#51266d">Isao Takahata</h2>
+            <img class="container" src="imagenes/Takahata.jpg" alt="Isao Takahata">
+            <p>Nacido en Ise, en el centro del país, el 29 de octubre de 1935...</p>
+        </div>
+    </main>
+
+    <script src="js/funciones.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
